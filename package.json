@@ -1,0 +1,14 @@
+{
+  "name": "ai-resume-reviewer-root",
+  "version": "1.0.0",
+  "description": "Root configuration to run client and server for AI Resume Reviewer",
+  "scripts": {
+    "install-all": "npm install --prefix backend && npm install --prefix frontend",
+    "server": "npm run dev --prefix backend",
+    "client": "npm run dev --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
